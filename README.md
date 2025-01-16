@@ -34,7 +34,9 @@ This Stealer Has Been Made In C#, And It's Fast & Light Stub [ 500-600 KB ], You
 - **Cryptocurrency Wallets:**
   - Captures wallet files and sensitive information from installed wallet applications.
 - **File Collection:**
-  - Targets specific directories or file types for extraction.  
+  - Targets specific directories or file types for extraction.
+
+- **And Alot More That I Can't Describe!!!**
 
 
 
