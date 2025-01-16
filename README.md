@@ -3,3 +3,7 @@
 
 
 ![ger](https://github.com/user-attachments/assets/72a43569-c141-42ac-a1ce-dd0678fafc72)
+
+
+## Features
+![stalk1](https://github.com/user-attachments/assets/e5fedd25-c4b5-4faa-81e1-e7704c2c5b3e)
