@@ -49,4 +49,4 @@ This tool is intended to help developers and security enthusiasts understand vul
 Please remember that the unauthorized use of this tool is against the law. If you intend to use ZeroTrace Stealer, ensure that you have explicit permission from the systems or users involved.
 
 
-
+You Have Any Questions? Ask : https://t.me/ZeroTraceDeveloper
