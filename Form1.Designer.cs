@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
+            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -39,7 +43,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +59,9 @@
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -63,7 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl28)).BeginInit();
             this.panelControl28.SuspendLayout();
@@ -85,6 +90,9 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.label2);
+            this.panelControl2.Controls.Add(this.checkEdit2);
+            this.panelControl2.Controls.Add(this.checkEdit1);
             this.panelControl2.Controls.Add(this.pictureBox5);
             this.panelControl2.Controls.Add(this.pictureBox4);
             this.panelControl2.Controls.Add(this.pictureBox3);
@@ -97,9 +105,43 @@
             this.panelControl2.Size = new System.Drawing.Size(458, 174);
             this.panelControl2.TabIndex = 33;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(237, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 14);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "3.0.0.0";
+            // 
+            // checkEdit2
+            // 
+            this.checkEdit2.Location = new System.Drawing.Point(249, 135);
+            this.checkEdit2.MenuManager = this.fluentFormDefaultManager1;
+            this.checkEdit2.Name = "checkEdit2";
+            this.checkEdit2.Properties.AllowFocused = false;
+            this.checkEdit2.Properties.Caption = "Steal Cookies";
+            this.checkEdit2.Size = new System.Drawing.Size(89, 20);
+            this.checkEdit2.TabIndex = 37;
+            // 
+            // fluentFormDefaultManager1
+            // 
+            this.fluentFormDefaultManager1.Form = this;
+            // 
+            // checkEdit1
+            // 
+            this.checkEdit1.Location = new System.Drawing.Point(191, 135);
+            this.checkEdit1.MenuManager = this.fluentFormDefaultManager1;
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.AllowFocused = false;
+            this.checkEdit1.Properties.Caption = "Sleep";
+            this.checkEdit1.Size = new System.Drawing.Size(52, 20);
+            this.checkEdit1.TabIndex = 36;
+            // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::ZeroTrace_Stealer.Properties.Resources.ger;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(1, 8);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
@@ -110,7 +152,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::ZeroTrace_Stealer.Properties.Resources.google_chrom_icon_14;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(291, 40);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
@@ -121,7 +163,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::ZeroTrace_Stealer.Properties.Resources.Microsoft_Edge_logo__2019__svg;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(238, 40);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
@@ -132,7 +174,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::ZeroTrace_Stealer.Properties.Resources.MetaMask_Fox_svg;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(185, 40);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
@@ -173,10 +215,6 @@
             this.textEdit4.Properties.AllowFocused = false;
             this.textEdit4.Size = new System.Drawing.Size(435, 20);
             this.textEdit4.TabIndex = 11;
-            // 
-            // fluentFormDefaultManager1
-            // 
-            this.fluentFormDefaultManager1.Form = this;
             // 
             // simpleButton1
             // 
@@ -226,11 +264,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label4.Location = new System.Drawing.Point(9, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(234, 13);
+            this.label4.Size = new System.Drawing.Size(246, 13);
             this.label4.TabIndex = 11;
-            this.label4.Text = "10 MB Limited, Use Telegram For Better Results";
+            this.label4.Text = "10 MB Limited, Use Telegram For Better Results!!!\r\n";
             // 
             // simpleButton13
             // 
@@ -322,11 +361,14 @@
             this.Name = "Form1";
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ZeroTrace Stealer";
+            this.Text = "ZeroTrace Stealer Build 3.0.0.0";
             this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -335,7 +377,6 @@
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl28)).EndInit();
             this.panelControl28.ResumeLayout(false);
@@ -371,6 +412,9 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private DevExpress.XtraEditors.CheckEdit checkEdit2;
+        private DevExpress.XtraEditors.CheckEdit checkEdit1;
     }
 }
 

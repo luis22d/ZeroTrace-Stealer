@@ -118,6 +118,8 @@
     <None Include="bin\Release\Stub\ZeroStubTelegram.exe" />
     <None Include="bin\Release\Stub\ZeroStubWebHook.exe" />
     <Content Include="fwa.ico" />
+    <None Include="Resources\ZeroTelegram.exe" />
+    <None Include="Resources\ZeroWebhook.exe" />
     <Content Include="wqe.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

