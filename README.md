@@ -38,7 +38,14 @@ This Stealer Has Been Made In C#, And It's Fast & Light Stub [ 500-600 KB ], You
 
 - **And Alot More That I Can't Describe!!!**
 
-
+### 3.0.0.0 Update:
+- **Browser Data Extraction:**
+  - New Update Including :
+    - **Steals Chrome Cookies Latest Version, Works On Latest Chrome Version.**  
+    - **Some Bug Fixes**  
+    - **More Stability**  
+  
+![image](https://github.com/user-attachments/assets/dfb8452e-82a8-4936-919a-c116cf3d3c14)
 
 
 ## Disclaimer
