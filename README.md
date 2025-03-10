@@ -47,6 +47,17 @@ This Stealer Has Been Made In C#, And It's Fast & Light Stub [ 500-600 KB ], You
   
 ![image](https://github.com/user-attachments/assets/dfb8452e-82a8-4936-919a-c116cf3d3c14)
 
+### 4.0.0.0 Update:
+
+- **Browser Data Extraction:**
+  - New Update Including :
+    - **build issues fix**  
+    - **cookies issue fix**  
+    - **more light stub [ 214-215 KB ]**
+    - more stable
+
+![image](https://github.com/user-attachments/assets/52051666-8015-47aa-9adf-6b668e7d3a7a)
+
 
 ## Disclaimer
 **ZeroTrace Stealer is strictly for educational and research purposes only.**  
