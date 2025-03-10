@@ -55,6 +55,7 @@ This Stealer Has Been Made In C#, And It's Fast & Light Stub [ 500-600 KB ], You
     - **cookies issue fix**  
     - **more light stub [ 214-215 KB ]**
     - more stable
+    - ~discord support removed.
 
 ![image](https://github.com/user-attachments/assets/52051666-8015-47aa-9adf-6b668e7d3a7a)
 
