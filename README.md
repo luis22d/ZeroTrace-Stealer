@@ -69,3 +69,8 @@ Please remember that the unauthorized use of this tool is against the law. If yo
 
 
 You Have Any Questions? Ask : https://t.me/ZeroTraceDeveloper
+
+## DONATE
+
+TRC20 - USDT20  |  TRX
+TUuLGi3DaQQ3qQK1BtHFqJToac7bShKp5v
