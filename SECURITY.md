@@ -36,7 +36,6 @@ After you have submitted your report, you can expect the following response proc
 
 | Version | Supported          |
 | ------- | ------------------ |
-| v6.x    | :white_check_mark: |
 | v5.x    | :white_check_mark: |
 | v4.x    | :white_check_mark: |
 | v3.x    | :x:                |
